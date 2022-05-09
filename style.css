@@ -1,0 +1,589 @@
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./font/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./font/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('./font/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./font/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('./font/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./font/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ 
+ font-style: normal;
+font-size: 16px;
+font-weight: normal;
+color: #102746;
+line-height: 1.2;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+max-width: 1060px;
+margin: 0 auto;
+}
+
+
+
+.wrapper-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+
+.logo{
+    position: absolute;
+    top:57px;
+    left:13%;
+    height: 31px;
+
+}
+
+.nav-item{
+display: inline-block;
+text-align: right;
+margin:0px 82px;
+transform:translateX(492px);
+margin-bottom: 70px;
+}
+
+.nav-link{
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+
+   
+}
+.wrapper{
+    padding-bottom: 176px;
+}
+
+
+
+.nav-item:last-child{
+    margin-right: 0;
+}
+
+
+
+.intro{
+height: 100vh;    
+
+
+
+}
+.header{
+    background: url(./jmg/intro.png) no-repeat center ;
+background-size: cover;
+
+}
+
+.intro-title{
+font-family: 'Lato';
+font-size: 50px;
+height: 121px;
+font-weight: 500;
+line-height: 60px;
+color: #FFFFFF;
+max-width: 619px;
+padding-bottom: 22px;
+}
+
+.intro-text{
+font-family:'Lato';
+font-weight: 400;
+font-style: normal;
+font-size:16px;
+line-height: 24px;
+color: #FFFFFF;
+margin-bottom: 59px;
+}
+
+.search{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-info{
+    background: transparent ;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    width: 297px;
+    padding-bottom: 22px;   
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight:500px;
+    color: #FFFFFF;
+}
+
+
+.search-info::placeholder{
+    background:url(./jmg/ov.png)  left no-repeat;
+    padding-left: 30px;
+    font-weight:500px;
+    font-size: 18px;
+    color: white;
+}
+
+.search-button{
+    max-width: 171px;
+    padding-bottom: 14px;
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 15px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: left;
+    color: white;
+    background-color: #1B7DFF;
+    border:0;
+
+}
+.search-button:hover, .search-button:focus{
+    color: #102746;
+}
+/* ТАК ДЕЛАЛА ВОТ ТУ БЕЛУЮ ХУЁВИНУ*/
+.benefits-wrap{
+    max-width: 1262px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    position: relative;
+    margin-bottom: 131px;
+    padding: 90px 100px;
+}
+
+.benefits{
+    margin-top:-200px;
+}
+
+.benefits-name{
+    font-size: 35px;
+    font-weight:42px;
+    font-weight: 500;
+    width: 100%;
+    color:#102746;
+    margin-bottom: 100px;
+
+    transform: translateY(-100%);
+    background-color:#fff;
+}
+
+.benefits-cards{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-column-gap: 55px;
+}
+
+.benefit-card{
+    margin-bottom: 112px;
+}
+
+.benefit-card-pic{
+   
+    max-width: 66px;
+    margin-bottom: 37px;
+}
+
+.benefits-title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 26px;
+ 
+}
+
+.benefit-text{
+    
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 39px;
+
+}
+
+
+.learn-more{
+    padding-left: 100px;
+    display: inline-block;
+    padding-right: 59px;
+    text-decoration: none;
+    color: #006DFE;
+    font-size: 16px;
+    line-height: 24px;
+    background: url(./jmg/Shape.png) no-repeat center right;
+   
+}
+
+
+.wrapper-full{
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+.section-title{
+    font: lato;
+    font-size: 35px;
+    line-height: 42px;
+    width: 500;
+    position: relative;
+    padding-bottom:10px ;
+}
+
+.section-title::after{
+    display:block;
+    content:'';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+
+.place-title{
+    margin-bottom:36px ;
+}
+
+.places-caption{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.place-view{
+font-size :16px;
+line-height: 24px;
+color: #006DFE;
+text-decoration: none;
+background: url(./jmg/Shape.png) no-repeat right center;
+padding-right: 59px;
+}
+
+.places-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+
+}
+
+.places-card{
+    position: relative;
+}
+
+.places-card::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+
+.top-card-top{
+    width: 100%;
+    position: relative;
+
+}
+
+
+.places-card-title{
+    font-size: 50px;   
+    line-height: 60px;
+color: white;
+position: absolute;
+bottom: 27px;
+left: 29px;
+z-index: 3;
+}
+
+
+.places_card_size_lg{
+    grid-column: span 3;
+  
+}
+
+.places_card_size_sm{
+    grid-column: span 2;
+
+}
+
+
+.places_card_size_lg{
+    height: 354px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.places_card_size_sm{
+height: 283px;
+width: 100%;
+object-fit: cover;
+margin-bottom: 125px;
+}
+
+.tours{
+    margin-bottom: 139px;
+}
+
+.tour{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    margin-bottom: 77px;
+
+}
+
+.tour:nth-child(even) .tour-info{
+   
+}
+
+.container{
+    max-width: 1292px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.tour-title{
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+   margin-bottom: 85px;
+}
+
+.tour-describe{
+    font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+margin-bottom: 58px;
+
+}
+
+
+.tour-link{
+    background: url(./jmg/Shape.png ) no-repeat right center;
+   color: #006DFE;
+   text-decoration: none;
+   padding-right: 50px;
+}
+
+.tour-pic{
+    max-width: 857px;
+    max-height: 680px;
+}
+
+.tour-info{
+ 
+    margin-bottom: 40px;
+}
+
+
+.top{ 
+    margin-bottom: 86px;
+}
+
+.visit-title{
+    margin-bottom: 54px;
+}
+
+.top-cards{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-column-gap: 57px;
+
+
+}
+
+.top-card-pic{
+    width: 100%;
+    
+}
+
+.visit-coment{
+    position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+}
+.visit-title-card{
+    display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: flex-end;
+background: rgba(21, 24, 36, 0.6); ;
+padding: 16px 25px;
+}
+
+
+.top-card-title{
+    font-family: 'Lato';
+font-size: 18px;
+font-weight: 500;
+line-height: 24px;
+color: #FFFFFF;
+
+
+}
+
+.top-card-title{
+    position: absolute;
+    left: 8%;
+}
+.card-like{
+    font-family: Lato;
+font-size: 16px;
+line-height: 24px;
+font-weight: 500;
+color: #fff;
+padding-right: 20px;
+background: url(./jmg/like.png) no-repeat right ;
+margin-right: 14px;
+
+
+}
+
+.card-comment{
+    font-family: Lato;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+color: #fff;
+padding-right: 23px;
+background:url(./jmg/commm.png) no-repeat right;
+
+}
+
+.visit-card-des{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+
+.visit-link{
+    padding: 12px 19px;
+    background: #006DFE;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 19px;
+}
+
+
+.play-logo{
+    display: flex;
+    justify-content: center;
+
+transform: translateY(250px);
+}
+
+.videos-wrapper{
+    width: 100%;
+    background: url(./jmg/video.png) no-repeat center;
+    height: 609px;
+    background-size: cover;
+    justify-content: center;
+}
+
+.footer{
+    background: #0E1D28;
+    padding: 119px 0;
+}
+
+
+
+.footer-logo{
+    width: 50%;
+    max-width: 170px;
+   
+    
+  
+   
+}
+
+.footer-menu-item{
+    list-style: none;
+}
+
+
+.footer-nav1{
+    position: absolute;
+    left: 50%;
+    right: 43.26%;
+    
+ 
+}
+.footer-nav2{
+    position: absolute;
+left: 66.42%;
+right: 28.3%;
+}
+
+.footer-nav3{
+ position: absolute;
+left: 81.39%;
+right: 11.6%;
+
+}
+
+.footer-menu-title{
+ 
+font-size: 18px;
+font-weight: 500;
+line-height: 24px;
+color: #FFFFFF;
+
+}
+
+.footer-menu-link{
+
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: #fff;
+text-decoration: none;
+
+}
